@@ -1,0 +1,34 @@
+1) With BMP085 we could get the functionality where we can use temperature and pressure
+as our parameters to further calculate or print the required parameters from any of
+them.
+
+
+2) BMP085 is a python based library for measuring barometric pressure and temperature.
+
+3) Here we initialize bmp to BMP(0X77), Here 0X77 is the stnadrad default value.
+Here by intialiasing bmp to BMP(0x77) ,we by default do debug=True.
+
+4) We can also specify the operating modes by setting the parameters as
+         -0  -1  -2  -3
+
+5)  Here 0 is for ULTRALOWPOWER modes
+      -  1 is for STANDARD modes
+      -  2 is for HIRES modes
+      -  3 is for ULTRAHIRES mode
+
+6)  Now we get altitude as bmp.readAltitude().
+    This function reads the Altitude and store it in altitude variable.
+
+
+7)  Now we get pressure as bmp.readPressure().
+    This function reads the Pressure and store it in pressure variable.
+
+8)  Now we get tempreature as bmp.readTemperature().
+    This function reads the temperature and store it in temp variable.
+
+9)  The print is done by using the format specifiers of float type
+    upto 2 precision value and the units are specified at the end of each print
+    statement.
+
+10) At last we are printing all the variables which are storing the parameters
+    that are temperature, pressure and altitude respectively.
